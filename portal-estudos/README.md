@@ -8,7 +8,7 @@ Interface web desenvolvida para fins acadêmicos, integrando telas de formulári
 
 📂 Estrutura desta Pasta
 portal-estudos/
-├── acesso.html        # Página de login e cadastro
-├── questionario.html  # Questionário de perfil
-├── estilos.css        # Estilos gerais da interface
-└── interação.js       # Script de interatividade
+acesso.html        # Página de login e cadastro
+questionario.html  # Questionário de perfil
+estilos.css        # Estilos gerais da interface
+interação.js       # Script de interatividade
