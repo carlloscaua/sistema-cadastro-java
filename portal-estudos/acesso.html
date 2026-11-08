@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso - Formulário</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Cabeçalho Principal -->
+        <header class="header">
+            <span class="tag">BOAS-VINDAS</span>
+            <h1>Seu próximo passo começa aqui</h1>
+            <p>Entre ou crie seu perfil para organizar seus estudos.</p>
+        </header>
+
+        <!-- Seção com dois cartões organizados em Grid/Flexbox -->
+        <div class="cards-container">
+            
+            <!-- Cartão 1: Entrar -->
+            <section class="card">
+                <h2>Entrar</h2>
+                <form id="form-login">
+                    <div class="form-group">
+                        <label for="login-email">E-mail (obrigatório)</label>
+                        <input type="email" id="login-email" placeholder="ana@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-senha">Senha (obrigatória)</label>
+                        <input type="password" id="login-senha" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="lembrar">
+                        <label for="lembrar">Lembrar meu e-mail</label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Cartão 2: Criar cadastro -->
+            <section class="card">
+                <h2>Criar cadastro</h2>
+                <form id="form-cadastro">
+                    <div class="form-group">
+                        <label for="cad-nome">Nome completo (obrigatório)</label>
+                        <input type="text" id="cad-nome" placeholder="Ex.: Ana Souza" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cad-email">E-mail (obrigatório)</label>
+                        <input type="email" id="cad-email" placeholder="ana@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cad-senha">Crie uma senha (obrigatória)</label>
+                        <input type="password" id="cad-senha" minlength="6" required>
+                        <small class="hint">Use pelo menos 6 caracteres nesta simulação.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cad-curso">Curso (obrigatório)</label>
+                        <select id="cad-curso" required>
+                            <option value="" disabled selected>Selecione seu curso</option>
+                            <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="si">Sistemas de Informação</option>
+                            <option value="cc">Ciência da Computação</option>
+                            <option value="eng">Engenharia de Software</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="termos" required>
+                        <label for="termos">Concardo com os termos desta atividade (obrigatório)</label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+        <!-- Rodapé do formulário conforme a tela -->
+        <footer class="footer-info">
+            <p>Atividade acadêmica · Use apenas dados fictícios</p>
+            <p class="nav-link-box">
+                <a href="questionario.html" class="link-paginas">Ir para a aba Questionário &rarr;</a>
+            </p>
+        </footer>
+    </main>
+
+    <script src="interacao.js"></script>
+</body>
+</html>

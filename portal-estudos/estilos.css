@@ -1,0 +1,185 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f3f4f8;
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Container Principal */
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Cabeçalho */
+.header {
+    margin-bottom: 25px;
+}
+
+.tag {
+    color: #5b21b6;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #1e1b4b;
+    margin: 8px 0;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* Grid / Cartões */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    flex: 1;
+    min-width: 320px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.full-width {
+    flex: 100%;
+}
+
+.card h2 {
+    font-size: 20px;
+    color: #1e1b4b;
+    margin-bottom: 20px;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #6d28d9;
+}
+
+.hint {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* Checkbox e Radio */
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+/* Botões */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary {
+    background-color: #5b21b6;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4c1d95;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: #5b21b6;
+    border: 1px solid #5b21b6;
+}
+
+.btn-secondary:hover {
+    background-color: #f5f3ff;
+}
+
+/* Rodapé */
+.footer-info {
+    margin-top: 30px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.nav-link-box {
+    margin-top: 15px;
+}
+
+.link-paginas {
+    color: #5b21b6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-paginas:hover {
+    text-decoration: underline;
+}
